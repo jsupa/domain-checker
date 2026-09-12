@@ -1,0 +1,37 @@
+{
+  "name": "domain-checker",
+  "version": "1.0.0",
+  "description": "Multi-threaded domain checker scraping CertStream, validating HTML content via got, tracking latency, and exporting to CSV.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "domain-checker": "dist/index.js"
+  },
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "run:built": "node dist/index.js",
+    "demo": "tsx src/index.ts --demo"
+  },
+  "keywords": [
+    "certstream",
+    "domain-checker",
+    "certificate-transparency",
+    "multi-threaded",
+    "got",
+    "crawler"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^22.20.2",
+    "@types/ws": "^8.18.1",
+    "commander": "^15.0.0",
+    "csv-stringify": "^6.8.3",
+    "got": "^16.0.0",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2",
+    "ws": "^8.21.3"
+  }
+}
